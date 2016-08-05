@@ -104,7 +104,7 @@ document.form.elements[entry].focus();
   var alltenses='no'; var approveVosotros='yes';
   var selectVerbs=true;
   var selectPronouns=true;
-  
+
 var capitalization = 'no';  var selectClock = true;
   see_correct = true; var id="1";
   var type="verbs";
@@ -116,7 +116,7 @@ var capitalization = 'no';  var selectClock = true;
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="../conjugator/css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -126,7 +126,7 @@ var capitalization = 'no';  var selectClock = true;
         padding: 9px 0;
       }
     </style>
-    <link href="../conjugator/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -227,48 +227,48 @@ var capitalization = 'no';  var selectClock = true;
               <div id="answerSpace" class="">
                 <div id="answerSpaceText"><!--<i>The answer is:</i> Frances Very long answer goes here and has enough space frances very long answer goes here and has enough spacer.-->
                 </div>
-              </div>  
+              </div>
               <fieldset class="">
                 <label for="">Pronoun </label>
                 <input type="text" size="40" name="pronoun" id="pronoun" class="" autocomplete="off">
-              </fieldset>       
+              </fieldset>
               <fieldset class="">
                 <label for="">Verb </label>
                 <input type="text" size="40" name="verb" id="verb" class="" autocomplete="off">
-              </fieldset>       
+              </fieldset>
               <fieldset class="">
                 <label for="">Answer </label>
                 <input type="text" size="40" name="response" id="response" class="" autocomplete="off">
                 <a class="btn btn-primary btn-large" href="#" id="checkButton" accesskey="c">Check</a>
-              </fieldset>       
+              </fieldset>
               <fieldset class="">
                 <label for=""> </label>
                 <a href="#" id="addAccentButton" accesskey="a"><img src="src/btn-add-accent.png" alt="Add accent"></a>
-                
+
                 <a href="#" id="explainAccent" class="hintLink">Explain accents</a>
-              </fieldset>       
+              </fieldset>
             </div>
             <div id="scoreSlice" class="slice">
-              Your Score is: 
+              Your Score is:
               <input type="text" readonly="" size="10" name="current_results" id="current_results" value="">
             </div>
     <div id="chooseSlice" class="slice">
-          
-          
+
+
       <fieldset class="hasRequired">
         <label for=""><h4>Choose your verbs:</h4> Choose ALL VERBS or press Ctrl-Alt (PCs) or Option/Apple (Macs) while you click to select multiple verbs.</label>
         <script language="JavaScript">
 
       document.writeln('<select name="verbs" id="verbs_conj" multiple="yes" onChange=changeSettings() size="11">');
       document.writeln('<option selected>ALL VERBS</option>');
-        
+
         var infCopy=new Array();
         for (i=0; i<infinitive.length; i++) {
           infCopy[i]=infinitive[i];
 
         }
         infCopy.sort();
-        
+
         for (i=0; i<infinitive.length; i++) {
           var j;
           var copy=infCopy[i];var m=0;var done="no";
@@ -282,15 +282,15 @@ var capitalization = 'no';  var selectClock = true;
           }
           var thisVerb=infCopy[i];
           document.write('<option value='+j+'>'+thisVerb+'</option>');
-          
+
           }
         document.writeln('</select>');
       </script><select name="verbs" multiple="yes" onchange="changeSettings()" size="11">
 <option selected="">ALL VERBS</option>
 <option value="14">arbeiten</option><option value="17">diskutieren</option><option value="9">fliegen</option><option value="13">gehen</option><option value="22">heissen</option><option value="10">hören</option><option value="12">kochen</option><option value="3">kommen</option><option value="5">lernen</option><option value="23">lieben</option><option value="16">machen</option><option value="7">probieren</option><option value="11">reisen</option><option value="4">reiten</option><option value="15">schwimmen</option><option value="1">spielen</option><option value="8">studieren</option><option value="6">suchen</option><option value="18">tanzen</option><option value="21">treiben</option><option value="20">trinken</option><option value="19">wohnen</option><option value="2">öffnen</option></select>
 
-      </fieldset>     
-          
+      </fieldset>
+
       <fieldset class="hasRequired">
         <label for=""><h4>Choose your pronoun:</h4> You can only make one selection from this list.</label>
         <select name="pronouns" size="12" onchange="changeSettings()">
@@ -304,7 +304,7 @@ var capitalization = 'no';  var selectClock = true;
 </option><option>ihr
 </option><option>sie
 </option><option>Sie      </option></select>
-      </fieldset>   
+      </fieldset>
           </div><!--/row-->
         </div><!--/span-->
       </div><!--/row-->
@@ -322,6 +322,6 @@ var capitalization = 'no';  var selectClock = true;
     <!-- Placed at the end of the document so the pages load faster -->
 
 
-  
+
 
 </body></html>
