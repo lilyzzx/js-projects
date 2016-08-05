@@ -1,0 +1,260 @@
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html { 
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  -webkit-font-smoothing: antialiased;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Roboto', sans-serif;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Navigation Section */
+
+.content {
+    padding: 0 0.938rem;
+    margin: 0 auto;
+    text-align: center;
+	min-width: 37.5rem;
+    width: 60rem;
+}
+
+.top-navigation {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.top-navigation > .content {
+    height: 70px;
+}
+
+.top-navigation .logo {
+	height: 70px;
+	width:  26px;
+	float: left;
+}
+
+.links {
+	margin-top: 30px;
+	float: right;
+}
+
+.top-navigation .links > li {
+	font-size: 16px; 
+	color: #838994; 
+	letter-spacing: 0.03em;
+	display: inline-block;
+	margin-left: 1.5em;
+}
+
+.top-navigation .links > .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+
+.top-navigation .links > li:hover {
+	color: #333333;
+	cursor: pointer;
+}
+
+.introduction {
+	background-image: url("../img/first-background.jpg");
+	background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 45.938rem;
+	overflow: auto;
+	min-width: 
+}
+
+h1, h3 {
+	font-weight: 300;
+}
+
+.introduction h1, .introduction h3 {
+	color: #ffffff;
+}
+
+.introduction h1 {
+	margin-top: 17.5rem;
+}
+
+.content h1 {
+	font-size: 3.125rem;
+}
+
+.introduction h3 {
+	margin-top: 1.25rem;
+	font-size: 1.563rem;
+}
+
+.introduction .buttons {
+	margin-top: 1.563rem;
+	padding: 0;
+	text-align: center;
+}
+
+button {
+	width: 9.688rem;
+	background-color: #f15a29;
+	border-color: #f15a29;
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 1rem 1.5rem;
+	color: white;
+	font-size: 1.125rem;
+}
+
+button:hover {
+	background-color: #d9400e;
+	border-color: #cf3d0e;
+	cursor: pointer;
+}
+
+.cases {
+	margin-top: 7.875rem;
+	overflow:  hidden;
+	padding-bottom: 5rem;
+}
+
+.cases h2 {
+	font-size: 2.75rem;
+	margin: 1.625rem 0 3.125rem;
+	font-weight: 300;
+}
+
+.devices {
+	text-align: center;
+}
+
+.devices > li {
+	display: inline-block;
+}
+
+.devices > li > img {
+	width: 127px;
+	height: 127px;
+}
+
+.cases .devices > li {
+	width: 33.3333333%;
+	float: left;
+}
+
+.cases .devices h3 {
+	font-weight: 400;
+	font-size: 1.563rem;
+	margin: 2.5rem 0px 1.875rem;
+}
+
+.social hr {
+	border: 0;
+	border-top: 1px solid #eaebec;
+	margin: 1.313rem 0;
+}
+
+h5 {
+display: block;
+font-size: 1em;
+/* font-weight: bold; */
+}
+
+.social {
+	padding-bottom: 9.375rem;
+}
+
+.social li {
+	display: inline-block;
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0.625rem 0;
+	border: 1px solid #eaebec;
+	border-radius: 50%;
+}
+
+.social li:hover {
+	cursor: pointer;
+}
+
+.icons {
+	padding: 20px;
+}
+
+.social .fa-twitter {
+	color: #55acee;
+}
+
+.social .fa-facebook {
+	color: #4c66a4;
+}
+
+.social .fa-instagram {
+	color: #3f729b;
+}
+
+.social .copy {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: #838994;
+	/* -webkit-margin-before: 1.67em; */ 
+	/* -webkit-margin-after: 1.67em; */
+}

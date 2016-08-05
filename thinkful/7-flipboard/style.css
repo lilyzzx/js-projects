@@ -1,0 +1,142 @@
+/* Initial body */
+body {
+  left: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Initial menu */
+.menu {
+  background-color: #202024;
+  right: -200px; /* start off behind the scenes */
+  height: 100%;
+  position: fixed;
+  width: 200;
+  z-index: 1;
+}
+
+/* Basic styling */
+
+.jumbotron {
+  background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/bg.png'); 
+  height: 100%;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  text-align: center;
+  line-height: 45px;
+  padding: 3px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.menu li:hover {
+  background-color: grey;
+}
+
+.menu a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.icon-close {
+  cursor: pointer;
+  width: 95%;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.icon-menu {
+  float: right;
+  width: 150px;
+  color: #fff;
+  cursor: pointer;
+  text-align: right;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  padding-bottom: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+
+.container {
+  width: 520px;
+  margin: 20px 20px;
+
+  float: left;
+}
+
+.button-group {
+  padding-bottom: 5px;
+  width: 100%;
+  text-align: right;
+}
+
+.form-control {
+  width: 100%;
+  outline: none;
+}
+
+.counter {
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.posts {
+  clear: both;
+  list-style: none;
+  padding-left: 0;
+  padding-top: 0;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.posts li {
+  background-color: #bbb;
+  word-wrap: break-word;
+  font-size: .8em;
+  margin-top: 4px;
+  padding: 2 5px;
+
+}
+
+.container {
+  background-color: grey;
+  padding: 10px;
+}
+
+.form-control {
+  height: 5em;
+  font-size: .8em;
+}
+
+.btn {
+  background-color: #DDD;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+}
+
+.counter {
+  font-size: .7em;
+}

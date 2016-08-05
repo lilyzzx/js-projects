@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)http://twitter.github.com/bootstrap/examples/fluid.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="./files/jquery.js"></script>
+    <script src="./files/bootstrap-transition.js"></script>
+    <script src="./files/bootstrap-alert.js"></script>
+    <script src="./files/bootstrap-modal.js"></script>
+    <script src="./files/bootstrap-dropdown.js"></script>
+    <script src="./files/bootstrap-scrollspy.js"></script>
+    <script src="./files/bootstrap-tab.js"></script>
+    <script src="./files/bootstrap-tooltip.js"></script>
+    <script src="./files/bootstrap-popover.js"></script>
+    <script src="./files/bootstrap-button.js"></script>
+    <script src="./files/bootstrap-collapse.js"></script>
+    <script src="./files/bootstrap-carousel.js"></script>
+    <script src="./files/bootstrap-typeahead.js"></script>
+    <script type="text/javascript" async="" src="src/ga.js"></script>
+    <script src="src/jquery.validate.js" type="text/javascript"></script>
+    <script src="src/core.js" type="text/javascript"></script>
+    <script language="JavaScript" src="src/german/verbs1.js"></script>
+    <script charset="utf-8" language="JavaScript" src="src/conj.js"></script>
+    <script charset="utf-8" language="JavaScript" src="src/german.js"></script>
+<script language="JavaScript">
+  var entry = "response";
+  function accent() {
+
+if (entry == '') {return}
+text=$.trim(document.form.elements[entry].value);
+if (text.charAt(text.length-1)=="" || text.charAt(text.length-1)==" ") {
+return;}
+if (text.charAt(text.length-1)=="a" || text.charAt(text.length-1)=="A" || text.charAt(text.length-1)=="o" || text.charAt(text.length-1)=="O" || text.charAt(text.length-1)=="u" || text.charAt(text.length-1)=="U" || text.charAt(text.length-1)=="s") {
+if (text.charAt(text.length-1)=='a')
+{text=text.substring(0,text.length-1);
+
+        document.form.elements[entry].value=text+'ä';
+
+        document.form.elements[entry].focus();
+
+        return;
+}
+if (text.charAt(text.length-1)=='A')
+{text=text.substring(0,text.length-1);
+
+        document.form.elements[entry].value=text+'Ä';
+
+        document.form.elements[entry].focus();
+
+        return;
+}
+if (text.charAt(text.length-1)=='o')
+{text=text.substring(0,text.length-1);
+
+        document.form.elements[entry].value=text+'ö';
+
+        document.form.elements[entry].focus();
+
+        return;
+}
+if (text.charAt(text.length-1)=='O')
+{text=text.substring(0,text.length-1);
+
+        document.form.elements[entry].value=text+'Ö';
+
+        document.form.elements[entry].focus();
+
+        return;
+}
+if (text.charAt(text.length-1)=='u')
+{text=text.substring(0,text.length-1);
+
+        document.form.elements[entry].value=text+'ü';
+
+        document.form.elements[entry].focus();
+
+        return;
+}
+if (text.charAt(text.length-1)=='U')
+{text=text.substring(0,text.length-1);
+
+        document.form.elements[entry].value=text+'Ü';
+
+        document.form.elements[entry].focus();
+
+        return;
+}
+if (text.charAt(text.length-1)=='s')
+{text=text.substring(0,text.length-1);
+
+        document.form.elements[entry].value=text+'ß';
+
+        document.form.elements[entry].focus();
+
+        return;
+}
+}
+else {
+var wrongLetter2=text.charAt(text.length-1);
+var wrongLetter=wrongLetter2.toUpperCase();
+alert('OOPS! You tried to put an accent on the letter '+wrongLetter+'.');
+document.form.elements[entry].focus();
+}
+}
+  var title_teacher = "DAS PRÄSENS: regular verbs";
+  var alltenses='no'; var approveVosotros='yes';
+  var selectVerbs=true;
+  var selectPronouns=true;
+  
+var capitalization = 'no';  var selectClock = true;
+  see_correct = true; var id="1";
+  var type="verbs";
+</script>
+    <meta charset="utf-8">
+    <title>Conjugator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../conjugator/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+    <link href="../conjugator/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="https://conjuguemos.com/images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body class="fullWidth activity verbActivity demo" onload="document.form.reset();whichLanguage(&#39;German&#39;);commandsYes(&#39;no&#39;);" onpaste="return false">
+
+<!-- Modal -->
+<div class="modal hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Time's up!</h3>
+  </div>
+  <div class="modal-body">
+    <p id="scoretext">One fine body…</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-large" data-dismiss="modal" aria-hidden="true">Close</button>
+    <a class="btn btn-primary btn-large" href="#" id="post_on_facebook" class="hintLink"target="_blank">Post to Facebook</a>
+    <script src="post_on_facebook.js"></script>
+  </div>
+</div>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="http://twitter.github.com/bootstrap/examples/fluid.html#">Conjugator</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Home</a></li>
+              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#about">About</a></li>
+              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Deutsch</li>
+              <li class="active"><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Das Präsens</a></li>
+              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Das Imperfekt</a></li>
+              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Das Perfekt</a></li>
+              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Die Futur</a></li>
+              <li><a href="http://twitter.github.com/bootstrap/examples/fluid.html#">Der Konjunktiv</a></li>
+              <a href="spanish.html"><li class="nav-header">Español</li></a>
+              <a href="french.html"><li class="nav-header">Français</li></a>
+              <a href="italian.html"><li class="nav-header">Italiano</li></a>
+              <a href="russian.html"><li class="nav-header">Русский</li></a>
+              <a href="#"><li class="nav-header">Other</li></a>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <div class="hero-unit">
+            <h1>Das Präsens: regular verbs</h1>
+            <p>Press <b>Start</b> to begin. You may check your answers by pressing Enter on the keyboard, or the <b>Check</b> button. You may change the verbs, pronouns, and tenses by scrolling down and selecting from the menus.</p>
+            <p><a class="btn btn-primary btn-large" href="#" id="startButton">Start!</a>
+            <a class="btn btn-large" href="s#" id="stopButton">Stop</a></p>
+            <!--<input type="button" name="Button" value="START" onclick="setvariable();randomizeList('yes')">-->
+          </div>
+          <div class="row-fluid">
+            <form name="sw">
+              <input type="hidden" name="timer" value="00:00">
+            </form>
+
+            <form name="form" id="form" onsubmit="return false">
+            <input type="hidden" name="phpsession" value="">
+             <input type="hidden" name="verb_type" value="">
+            <input type="hidden" name="username" value="">
+            <input type="hidden" name="usertype" value="">
+            <div id="timerSlice" class="slice">
+              Time me for <input type="text" size="1" name="clockinput" value="1" onchange="document.form.time.value=this.value;"> minutes!
+              <input type="text" name="time" id="clockdisplay" readonly="">
+              <br>
+              <input type="checkbox" name="approval" id="approval" value="no" onclick="originalClock();">
+              Don't time me
+            </div>
+            <div class="slice">
+              <div id="answerSpace" class="">
+                <div id="answerSpaceText"><!--<i>The answer is:</i> Frances Very long answer goes here and has enough space frances very long answer goes here and has enough spacer.-->
+                </div>
+              </div>  
+              <fieldset class="">
+                <label for="">Pronoun </label>
+                <input type="text" size="40" name="pronoun" id="pronoun" class="" autocomplete="off">
+              </fieldset>       
+              <fieldset class="">
+                <label for="">Verb </label>
+                <input type="text" size="40" name="verb" id="verb" class="" autocomplete="off">
+              </fieldset>       
+              <fieldset class="">
+                <label for="">Answer </label>
+                <input type="text" size="40" name="response" id="response" class="" autocomplete="off">
+                <a class="btn btn-primary btn-large" href="#" id="checkButton" accesskey="c">Check</a>
+              </fieldset>       
+              <fieldset class="">
+                <label for=""> </label>
+                <a href="#" id="addAccentButton" accesskey="a"><img src="src/btn-add-accent.png" alt="Add accent"></a>
+                
+                <a href="#" id="explainAccent" class="hintLink">Explain accents</a>
+              </fieldset>       
+            </div>
+            <div id="scoreSlice" class="slice">
+              Your Score is: 
+              <input type="text" readonly="" size="10" name="current_results" id="current_results" value="">
+            </div>
+    <div id="chooseSlice" class="slice">
+          
+          
+      <fieldset class="hasRequired">
+        <label for=""><h4>Choose your verbs:</h4> Choose ALL VERBS or press Ctrl-Alt (PCs) or Option/Apple (Macs) while you click to select multiple verbs.</label>
+        <script language="JavaScript">
+
+      document.writeln('<select name="verbs" id="verbs_conj" multiple="yes" onChange=changeSettings() size="11">');
+      document.writeln('<option selected>ALL VERBS</option>');
+        
+        var infCopy=new Array();
+        for (i=0; i<infinitive.length; i++) {
+          infCopy[i]=infinitive[i];
+
+        }
+        infCopy.sort();
+        
+        for (i=0; i<infinitive.length; i++) {
+          var j;
+          var copy=infCopy[i];var m=0;var done="no";
+          while (done=="no") {
+            var original=infinitive[m];
+            if (original==copy) {
+              j=m+1;
+              done="yes";
+            }
+            m++;
+          }
+          var thisVerb=infCopy[i];
+          document.write('<option value='+j+'>'+thisVerb+'</option>');
+          
+          }
+        document.writeln('</select>');
+      </script><select name="verbs" multiple="yes" onchange="changeSettings()" size="11">
+<option selected="">ALL VERBS</option>
+<option value="14">arbeiten</option><option value="17">diskutieren</option><option value="9">fliegen</option><option value="13">gehen</option><option value="22">heissen</option><option value="10">hören</option><option value="12">kochen</option><option value="3">kommen</option><option value="5">lernen</option><option value="23">lieben</option><option value="16">machen</option><option value="7">probieren</option><option value="11">reisen</option><option value="4">reiten</option><option value="15">schwimmen</option><option value="1">spielen</option><option value="8">studieren</option><option value="6">suchen</option><option value="18">tanzen</option><option value="21">treiben</option><option value="20">trinken</option><option value="19">wohnen</option><option value="2">öffnen</option></select>
+
+      </fieldset>     
+          
+      <fieldset class="hasRequired">
+        <label for=""><h4>Choose your pronoun:</h4> You can only make one selection from this list.</label>
+        <select name="pronouns" size="12" onchange="changeSettings()">
+      <option selected="">ALL PRONOUNS</option>
+          <option>ich
+</option><option>du
+</option><option>er
+</option><option>sie
+</option><option>es
+</option><option>wir
+</option><option>ihr
+</option><option>sie
+</option><option>Sie      </option></select>
+      </fieldset>   
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>© Chantazh</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+  
+
+</body></html>

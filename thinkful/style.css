@@ -1,0 +1,46 @@
+body {
+	background-color: black;
+	color: white;
+	font-family: helvetica, sans-serif;
+	padding: 1em 2em;
+}
+
+h1 {
+	font-weight: 500;
+	letter-spacing: 5px;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-family: garamond;
+	font-style: italic;
+	font-size: 1.2em;
+	letter-spacing: 0.1em;
+	margin: 0.4em 0;
+}
+
+header {
+	border-bottom: 1px solid white;
+	width: 20em;
+}
+
+a {
+	color: #AAA;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
+
+div {
+	font-size: 0.9em;
+}
+
+ol {
+	padding: 1em 1.3em;
+}
+
+li, p {
+	line-height: 1.2em;
+}
