@@ -37,7 +37,7 @@ Game.prototype.move = function (startTowerIdx, endTowerIdx) {
 };
 
 Game.prototype.print = function () {
-  console.log(JSON.stringify(this.towers));
+  // console.log(JSON.stringify(this.towers));
 };
 
 Game.prototype.promptMove = function (reader, callback) {
