@@ -1,17 +1,21 @@
 # JavaScript projects
 
-## 1 – Towers of Hanoi
+## 0 – Towers of Hanoi
 
-[live]: https://lilyxl8.github.io/js-projects/0-hanoi/
+**[Live](https://lilyxl8.github.io/js-projects/0-hanoi/)**
 
-## 2 – Snake
+## 1 – Snake
 
-[live]: https://lilyxl8.github.io/js-projects/1-snake/
+**[Live](https://lilyxl8.github.io/js-projects/1-snake/)**
 
-## 3 – StackerAjax
+## 2 – StackerAjax
 
-[live]: https://lilyxl8.github.io/js-projects/2-stackerAjax/
+**[Live](https://lilyxl8.github.io/js-projects/2-stackerAjax/)**
+
+## 3 – Conjugator
+
+**[Live](https://lilyxl8.github.io/js-projects/3-conjugator/)**
 
 ## 4 – Thinkful portfolio
 
-[Live]: https://lilyxl8.github.io/js-projects/2-stackerAjax/
+**[Live](https://lilyxl8.github.io/js-projects/4-thinkful/)**
