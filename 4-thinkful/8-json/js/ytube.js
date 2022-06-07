@@ -10,7 +10,7 @@ $(document).ready( function() {
 function getRequest(searchTerm) {
 	var params = {
 		part: 'snippet',
-		key: 'AIzaSyBmcG0vzufL7wsz5YmmG7yjXQ0sMPUNSGs',
+		key: '',
 		q: searchTerm
 	};
 	url = 'https://www.googleapis.com/youtube/v3/search';
